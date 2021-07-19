@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+sourceCompatibility =1.8
+targetCompatibility = 1.8
+compileJava.options.encoding = "UTF-8"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    api 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.google.guava:guava:28.2-jre'
+    testImplementation 'junit:junit:4.13'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+	implementation group: 'org.springframework', name: 'spring-context', version: '5.2.14.RELEASE'
+    
+    
+}
